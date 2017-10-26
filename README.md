@@ -2,4 +2,4 @@
 An algorithm using pure convolutional patterns to filter the input video stream and output it to show on a VGA cable. Only PL part of the Zedboard is used.
 
 Target input from OV7670 VGA resolution camera.
-The pixels stream is acquired in raw RGB data to FPGA and a Sobel kernel is applied to get gradient value.
+The pixels stream is acquired in raw RGB data to FPGA and a Sobel kernel is applied to get gradient value. Then Canny edge detection is performed by NMS and Double threshold connection. Evaluation has been done on Zedboard with a monitor showing the output results.
